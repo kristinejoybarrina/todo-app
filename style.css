@@ -48,7 +48,6 @@ main {
 }
 
 #box1 {
-    border: black 1px solid; /* Add a border around the box */
     flex: auto; /* Allow the box to grow and shrink */
     width: 459px; 
     height: 100%; /* Set the height of the box to 80% of the viewport height */
@@ -56,10 +55,10 @@ main {
     justify-content: center; /* Center the elements horizontally */
     align-items: center; /* Center the elements vertically */
     padding: 250px 50px; /* Add some padding inside the box */
+    border-radius: 8px;
 }
 
 #box2 {
-    border: black 1px solid; /* Add a border around the box */
     flex: auto; /* Allow the box to grow and shrink */
     width: 459px; 
     height: 100%; /* Set the height of the box to 80% of the viewport height */
@@ -67,21 +66,18 @@ main {
     justify-content: center; /* Center the elements horizontally */
     align-items: center; /* Center the elements vertically */
     padding: 250px 50px; /* Add some padding inside the box */
+    border-radius: 8px;
 }
 
-#box2 {
-    border: black 1px solid; /* Add a border around the box */
-    flex: auto; /* Allow the box to grow and shrink */
-    width: 459px; 
-    height: 100%; /* Set the height of the box to 80% of the viewport height */
-
-}
 #box3 {
-    border: black 1px solid; /* Add a border around the box */
     flex: auto; /* Allow the box to grow and shrink */
     width: 459px; 
     height: 100%; /* Set the height of the box to 80% of the viewport height */
-
+    display: flexbox; /* Use flexbox */
+    justify-content: center; /* Center the elements horizontally */
+    align-items: center; /* Center the elements vertically */
+    padding: 250px 50px; /* Add some padding inside the box */
+    border-radius: 8px;
 }
 
 #todo-symbol {
@@ -142,6 +138,40 @@ main {
 }
 
 #reminder-parag {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0; /* Remove default margin */
+    padding: 5px 0; /* Adjust padding to reduce space */
+    text-align: center; /* Center text */
+    word-wrap: break-word; /* Ensure long words break to fit within the box */
+    padding: 5px 0; /* Adjust padding to reduce space */
+    height: 40px; /* Set the height of the heading */
+}
+
+#upcoming-symbol {
+    width: 140px; /* Set the width of the symbol */
+    height: auto; /* Set the height of the symbol */
+    margin: 0 auto; /* Center the symbol horizontally */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the symbol horizontally */
+    align-content: center;
+    border-radius: 50%; /* Make it a circle */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+#upcoming-heading {
+    font-size: 24px; /* Set the font size of the heading */
+    font-weight: 300; /* Set the font weight of the heading */
+    height: 40px; /* Set the height of the heading */
+    font-family: 'Poppins', sans-serif; /* Set the font family of the heading */
+    margin: 0 auto; /* Center the symbol horizontally */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the symbol horizontally */
+    align-content: center;
+    padding: 5px 0; /* Adjust padding to reduce space */
+}
+
+#upcoming-parag {
     font-size: 14px;
     font-weight: 100;
     margin: 0; /* Remove default margin */

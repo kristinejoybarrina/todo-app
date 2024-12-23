@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+header {
+    background-color: #106CBD; /* Light gray background */
+    color: #ffffff; /* Dark text color */
+    height: 78px;
+    font-family: 'Poppins', sans-serif; /* Set the font family of the header */
+    font-weight: 100; /* Set the font weight of the header */
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-weight: 100; /* Light weight */
+    background-color: #f0f0f0; /* Background color for the body */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    display: flex; /* Use flexbox to arrange the boxes */
+    flex-direction: row; /* Arrange the boxes horizontally */
+    justify-content: space-around; /* Space the boxes evenly */
+    align-items: center; /* Center the boxes horizontally */
+    height: 100%; /* Full viewport height */
+    padding: 16px 16px;
+    gap: 16px; /* Add some space between the boxes */
+}
+
+#main-heading {
+    padding: 24px 24px; /* Add some padding inside the top and bottom of the header */
+    font-size: 24px; /* Set the font size of the header to 24 pixels */
+    font-family: 'Poppins', sans-serif; /* Set the font family of the header */
+    font-weight: 100; /* Set the font weight of the header */
+}
+
+.box {
+    background-color: #ffffff; /* Background color for the boxes */
+    flex-direction: row; /* Arrange the boxes horizontally */
+    justify-content: space-between ; /* Space the boxes evenly */
+    padding: 16px 16px; /* Add some padding inside the boxes */ 
+    height: 100%;
+}
+
+#box1 {
+    border: black 1px solid; /* Add a border around the box */
+    flex: auto; /* Allow the box to grow and shrink */
+    width: 459px; 
+    height: 100%; /* Set the height of the box to 80% of the viewport height */
+}
+
+#box2 {
+    border: black 1px solid; /* Add a border around the box */
+    flex: auto; /* Allow the box to grow and shrink */
+    width: 459px; 
+    height: 100%; /* Set the height of the box to 80% of the viewport height */
+
+}
+#box3 {
+    border: black 1px solid; /* Add a border around the box */
+    flex: auto; /* Allow the box to grow and shrink */
+    width: 459px; 
+    height: 100%; /* Set the height of the box to 80% of the viewport height */
+
+}

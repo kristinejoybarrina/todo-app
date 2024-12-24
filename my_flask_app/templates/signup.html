@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Sign Up</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,6 +17,7 @@
             text-align: center;
         }
         .container input[type="text"],
+        .container input[type="email"],
         .container input[type="password"] {
             width: 100%;
             padding: 10px;
@@ -36,23 +37,19 @@
         .container input[type="submit"]:hover {
             background-color: #45a049;
         }
-        .container .signup-link {
-            text-align: center;
-            margin-top: 10px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Login</h2>
-        <form action="/login" method="POST">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <input type="submit" value="Sign Up">
         </form>
-        <div class="signup-link">
-            <a href="/my_flask_app/templates/signup.html">Don't have an account? Sign up</a>
-        </div>
     </div>
 </body>
 </html>
